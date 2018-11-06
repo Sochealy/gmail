@@ -1,0 +1,1 @@
+{"version":3,"file":"\/home\/koompi\/project\/gmail\/target\/cljsbuild\/public\/js\/out\/gmail\/dev.js","sources":["dev.cljs?rel=1541495449824"],"lineCount":10,"mappings":";AAAA;;;;AAKA,AAACA;AAED,AAACC;AAED,AAACC","names":["devtools.core\/install!","cljs.core\/enable-console-print!","gmail.core\/init!"]}

@@ -1,0 +1,1 @@
+{"version":3,"file":"\/home\/koompi\/project\/gmail\/target\/cljsbuild\/public\/js\/out\/gmail\/util.js","sources":["util.cljc?rel=1541057582211"],"lineCount":11,"mappings":";AAAA;;AAEA,sBAAA,tBAAMA,oDAAUC;AAAhB,AAAA;AAAA,mFAEGA;;AACD,qCAAA,9BAACC,4BAAQD","names":["gmail.util\/foo-cljc","x","cljs.core\/println"]}

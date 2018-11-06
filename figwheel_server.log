@@ -1,0 +1,908 @@
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+[31mFailed to compile build :app from ["src/cljs" "src/cljc" "env/dev/cljs"] in 0.525 seconds.[0m
+[36m----  Could not Analyze  src/cljs/gmail/core.cljs   line:56  column:3  ----[0m
+
+  [1mUnable to resolve var: item-page in this context at line 56 src/cljs/gmail/core.cljs[0m
+
+  [36m55[0m  [36m(defn page-for [route][0m
+  [33m56[0m  [1m  (case route[0m
+  [0m  [0m  [33m  ^--- Unable to resolve var: item-page in this context at line 56 src/cljs/gmail/core.cljs[0m
+  [36m57[0m  [36m    :index #'home-page[0m
+  [36m58[0m  [36m  [0m
+  [36m59[0m  [36m    :item #'item-page))[0m
+
+[36m----  Analysis Error : Please see src/cljs/gmail/core.cljs  ----[0m
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+[31mFailed to compile build :app from ["src/cljs" "src/cljc" "env/dev/cljs"] in 0.402 seconds.[0m
+[36m----  Could not Analyze  src/cljs/gmail/core.cljs   line:56  column:3  ----[0m
+
+  [1mUnable to resolve var: item-page in this context at line 56 /home/koompi/project/gmail/src/cljs/gmail/core.cljs[0m
+
+  [36m55[0m  [36m(defn page-for [route][0m
+  [33m56[0m  [1m  (case route[0m
+  [0m  [0m  [33m  ^--- Unable to resolve var: item-page in this context at line 56 /home/koompi/project/gmail/src/cljs/gmail/core.cljs[0m
+  [36m57[0m  [36m    :index #'home-page[0m
+  [36m58[0m  [36m    :item #'item-page))[0m
+
+[36m----  Analysis Error : Please see src/cljs/gmail/core.cljs  ----[0m
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+[32mSuccessfully compiled build :app to "target/cljsbuild/public/js/app.js" in 0.528 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/goog/deps.js
+notifying browser that file changed:  target/cljsbuild/public/js/out/cljs_deps.js
+notifying browser that file changed:  target/cljsbuild/public/js/out/gmail/core.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+[32mSuccessfully compiled build :app to "target/cljsbuild/public/js/app.js" in 0.508 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/gmail/core.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+[31mFailed to compile build :app from ["src/cljs" "src/cljc" "env/dev/cljs"] in 0.342 seconds.[0m
+[36m----  Exception    ----[0m
+
+  [1mAssert failed: file:/home/koompi/project/gmail/src/cljs/gmail/mail.cljs does not provide a namespace
+(first provides)[0m
+
+[36m----  Exception Stack Trace  ----[0m
+
+java.lang.AssertionError: Assert failed: file:/home/koompi/project/gmail/src/cljs/gmail/mail.cljs does not provide a namespace
+(first provides)
+ at cljs.closure$javascript_file.invokeStatic (closure.clj:497)
+    cljs.closure$javascript_file.invoke (closure.clj:493)
+    cljs.closure$map__GT_javascript_file.invokeStatic (closure.clj:502)
+    cljs.closure$map__GT_javascript_file.invoke (closure.clj:500)
+    cljs.closure$compiled_file.invokeStatic (closure.clj:585)
+    cljs.closure$compiled_file.invoke (closure.clj:577)
+    cljs.closure$compile_file.invokeStatic (closure.clj:647)
+    cljs.closure$compile_file.invoke (closure.clj:625)
+    cljs.closure$fn__5175.invokeStatic (closure.clj:721)
+    cljs.closure/fn (closure.clj:715)
+    cljs.closure$fn__5088$G__5081__5095.invoke (closure.clj:543)
+    cljs.closure$compile_sources$iter__5301__5305$fn__5306.invoke (closure.clj:1081)
+    clojure.lang.LazySeq.sval (LazySeq.java:40)
+    clojure.lang.LazySeq.seq (LazySeq.java:49)
+    clojure.lang.Cons.next (Cons.java:39)
+    clojure.lang.RT.next (RT.java:706)
+    clojure.core$next__5108.invokeStatic (core.clj:64)
+    clojure.core$dorun.invokeStatic (core.clj:3134)
+    clojure.core$doall.invokeStatic (core.clj:3140)
+    clojure.core$doall.invoke (core.clj:3140)
+    cljs.closure$compile_sources.invokeStatic (closure.clj:1077)
+    cljs.closure$compile_sources.invoke (closure.clj:1066)
+    cljs.closure$build.invokeStatic (closure.clj:2930)
+    cljs.closure$build.invoke (closure.clj:2838)
+    cljs.build.api$build.invokeStatic (api.clj:208)
+    cljs.build.api$build.invoke (api.clj:189)
+    figwheel_sidecar.components.cljs_autobuild$cljs_build.invokeStatic (cljs_autobuild.clj:28)
+    figwheel_sidecar.components.cljs_autobuild$cljs_build.invoke (cljs_autobuild.clj:27)
+    figwheel_sidecar.build_middleware.injection$hook$fn__20860.invoke (injection.clj:94)
+    figwheel_sidecar.components.cljs_autobuild$notify_command_hook$fn__21182.invoke (cljs_autobuild.clj:69)
+    figwheel_sidecar.components.cljs_autobuild$figwheel_start_and_end_messages$fn__21172.invoke (cljs_autobuild.clj:48)
+    figwheel_sidecar.build_middleware.notifications$hook$fn__21041.invoke (notifications.clj:179)
+    figwheel_sidecar.build_middleware.clj_reloading$hook$fn__21098.invoke (clj_reloading.clj:111)
+    figwheel_sidecar.build_middleware.javascript_reloading$hook$fn__21131.invoke (javascript_reloading.clj:48)
+    figwheel_sidecar.components.cljs_autobuild$color_output$fn__21186.invoke (cljs_autobuild.clj:80)
+    figwheel_sidecar.components.cljs_autobuild$execute_build$fn__21228.invoke (cljs_autobuild.clj:234)
+    figwheel_sidecar.utils$sync_exec$fn__237$fn__238.invoke (utils.clj:13)
+    figwheel_sidecar.utils$sync_exec$fn__237.invoke (utils.clj:12)
+    clojure.core$binding_conveyor_fn$fn__5476.invoke (core.clj:2025)
+    clojure.lang.AFn.applyToHelper (AFn.java:154)
+    clojure.lang.RestFn.applyTo (RestFn.java:132)
+    clojure.lang.Agent$Action.doRun (Agent.java:114)
+    clojure.lang.Agent$Action.run (Agent.java:163)
+    java.util.concurrent.ThreadPoolExecutor.runWorker (ThreadPoolExecutor.java:1135)
+    java.util.concurrent.ThreadPoolExecutor$Worker.run (ThreadPoolExecutor.java:635)
+    java.lang.Thread.run (Thread.java:844)
+
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+[32mSuccessfully compiled build :app to "target/cljsbuild/public/js/app.js" in 0.42 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/cljs_deps.js
+notifying browser that file changed:  target/cljsbuild/public/js/out/gmail/mail.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+[32mSuccessfully compiled build :app to "target/cljsbuild/public/js/app.js" in 0.566 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/cljs_deps.js
+notifying browser that file changed:  target/cljsbuild/public/js/out/gmail/core.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+[32mSuccessfully compiled build :app to "target/cljsbuild/public/js/app.js" in 0.46 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/gmail/core.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+[36m----  Compiler Warning on   src/cljs/gmail/core.cljs   line:63  column:1  ----[0m
+
+  [1mmail already refers to: gmail.mail/mail being replaced by: gmail.core/mail[0m
+
+  [36m59[0m  [36m(defn about-page [][0m
+  [36m60[0m  [36m  (fn [] [:span.main[0m
+  [36m61[0m  [36m          [:h1 "About gmail"]]))[0m
+  [36m62[0m  [36m[0m
+  [33m63[0m  [1m(defn mail [][0m
+  [0m  [0m  [33m^--- mail already refers to: gmail.mail/mail being replaced by: gmail.core/mail[0m
+  [36m64[0m  [36m  (mail))[0m
+  [36m65[0m  [36m[0m
+  [36m66[0m  [36m[0m
+  [36m67[0m  [36m;; -------------------------[0m
+  [36m68[0m  [36m;; Translate routes -> page components[0m
+
+[36m----  Compiler Warning : Please see src/cljs/gmail/core.cljs  ----[0m
+[32mSuccessfully compiled build :app to "target/cljsbuild/public/js/app.js" in 1.468 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/goog/deps.js
+notifying browser that file changed:  target/cljsbuild/public/js/out/cljs_deps.js
+notifying browser that file changed:  target/cljsbuild/public/js/out/gmail/core.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+[32mSuccessfully compiled build :app to "target/cljsbuild/public/js/app.js" in 0.644 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/gmail/core.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+[32mSuccessfully compiled build :app to "target/cljsbuild/public/js/app.js" in 2.644 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/goog/deps.js
+notifying browser that file changed:  target/cljsbuild/public/js/out/cljs_deps.js
+notifying browser that file changed:  target/cljsbuild/public/js/out/gmail/mail.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+[32mSuccessfully compiled build :app to "target/cljsbuild/public/js/app.js" in 0.758 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/gmail/mail.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+[32mSuccessfully compiled build :app to "target/cljsbuild/public/js/app.js" in 1.138 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/gmail/core.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+[32mSuccessfully compiled build :app to "target/cljsbuild/public/js/app.js" in 0.627 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/gmail/core.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+[32mSuccessfully compiled build :app to "target/cljsbuild/public/js/app.js" in 0.765 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/gmail/core.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+[32mSuccessfully compiled build :app to "target/cljsbuild/public/js/app.js" in 0.458 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/gmail/core.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+[32mSuccessfully compiled build :app to "target/cljsbuild/public/js/app.js" in 0.398 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/gmail/core.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+[32mSuccessfully compiled build :app to "target/cljsbuild/public/js/app.js" in 1.75 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/goog/deps.js
+notifying browser that file changed:  target/cljsbuild/public/js/out/cljs_deps.js
+notifying browser that file changed:  target/cljsbuild/public/js/out/gmail/core.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+[32mSuccessfully compiled build :app to "target/cljsbuild/public/js/app.js" in 1.563 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/goog/deps.js
+notifying browser that file changed:  target/cljsbuild/public/js/out/cljs_deps.js
+notifying browser that file changed:  target/cljsbuild/public/js/out/gmail/core.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+[32mSuccessfully compiled build :app to "target/cljsbuild/public/js/app.js" in 0.608 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/gmail/core.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+[32mSuccessfully compiled build :app to "target/cljsbuild/public/js/app.js" in 0.55 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/gmail/mail.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+[32mSuccessfully compiled build :app to "target/cljsbuild/public/js/app.js" in 0.578 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/gmail/core.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+[32mSuccessfully compiled build :app to "target/cljsbuild/public/js/app.js" in 0.459 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/gmail/core.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+[31mFailed to compile build :app from ["src/cljs" "src/cljc" "env/dev/cljs"] in 0.32 seconds.[0m
+[36m----  Could not Read  src/cljs/gmail/core.cljs   line:104 ----[0m
+
+  [1m/home/koompi/project/gmail/src/cljs/gmail/core.cljs [line 104, col 1] Unexpected EOF while reading item 8 of list, starting at line 31 and column 3.[0m
+
+[36m----  Reader Error : Please see src/cljs/gmail/core.cljs  ----[0m
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+[31mFailed to compile build :app from ["src/cljs" "src/cljc" "env/dev/cljs"] in 0.33 seconds.[0m
+[36m----  Could not Read  src/cljs/gmail/core.cljs   line:33 ----[0m
+
+  [1m/home/koompi/project/gmail/src/cljs/gmail/core.cljs [line 33, col 32] Unmatched delimiter ].[0m
+
+  [36m31[0m  [36m(fn [][0m
+  [36m32[0m  [36m  [:span.main[0m
+  [33m33[0m  [1m   [:h1 "Welcome to gmail"]]]))[0m
+  [0m  [0m  [33m   /home/koompi/project/gmail/src/cljs/gmail/core.cljs [line 33, col 32] Unmatched delimiter ].[0m
+
+[36m----  Reader Error : Please see src/cljs/gmail/core.cljs  ----[0m
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+[32mSuccessfully compiled build :app to "target/cljsbuild/public/js/app.js" in 0.493 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/gmail/core.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+[32mSuccessfully compiled build :app to "target/cljsbuild/public/js/app.js" in 0.574 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/gmail/core.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+[32mSuccessfully compiled build :app to "target/cljsbuild/public/js/app.js" in 0.495 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/gmail/core.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+[32mSuccessfully compiled build :app to "target/cljsbuild/public/js/app.js" in 0.552 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/gmail/core.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+[31mFailed to compile build :app from ["src/cljs" "src/cljc" "env/dev/cljs"] in 0.281 seconds.[0m
+[36m----  Could not Read  src/cljs/gmail/core.cljs   line:94 ----[0m
+
+  [1m/home/koompi/project/gmail/src/cljs/gmail/core.cljs [line 94, col 1] Unexpected EOF while reading item 4 of vector, starting at line 66 and column 7.[0m
+
+[36m----  Reader Error : Please see src/cljs/gmail/core.cljs  ----[0m
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+[31mFailed to compile build :app from ["src/cljs" "src/cljc" "env/dev/cljs"] in 0.37 seconds.[0m
+[36m----  Could not Read  src/cljs/gmail/core.cljs   line:94 ----[0m
+
+  [1m/home/koompi/project/gmail/src/cljs/gmail/core.cljs [line 94, col 1] Unexpected EOF while reading item 5 of vector, starting at line 66 and column 7.[0m
+
+[36m----  Reader Error : Please see src/cljs/gmail/core.cljs  ----[0m
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+[32mSuccessfully compiled build :app to "target/cljsbuild/public/js/app.js" in 0.43 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/gmail/core.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+[31mFailed to compile build :app from ["src/cljs" "src/cljc" "env/dev/cljs"] in 0.292 seconds.[0m
+[36m----  Could not Read  src/cljs/gmail/core.cljs   line:69 ----[0m
+
+  [1m/home/koompi/project/gmail/src/cljs/gmail/core.cljs [line 69, col 12] Unmatched delimiter ).[0m
+
+  [36m67[0m  [36m       [page][0m
+  [36m68[0m  [36m       [:footer[0m
+  [33m69[0m  [1m         ])))[0m
+  [0m  [0m  [33m         /home/koompi/project/gmail/src/cljs/gmail/core.cljs [line 69, col 12] Unmatched delimiter ).[0m
+  [36m70[0m  [36m[0m
+  [36m71[0m  [36m;; -------------------------[0m
+  [36m72[0m  [36m;; Initialize app[0m
+
+[36m----  Reader Error : Please see src/cljs/gmail/core.cljs  ----[0m
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+[31mFailed to compile build :app from ["src/cljs" "src/cljc" "env/dev/cljs"] in 0.318 seconds.[0m
+[36m----  Could not Read  src/cljs/gmail/core.cljs   line:69 ----[0m
+
+  [1m/home/koompi/project/gmail/src/cljs/gmail/core.cljs [line 69, col 12] Unmatched delimiter ).[0m
+
+  [36m67[0m  [36m       [page][0m
+  [36m68[0m  [36m       [:footer[0m
+  [33m69[0m  [1m         ]))[0m
+  [0m  [0m  [33m         /home/koompi/project/gmail/src/cljs/gmail/core.cljs [line 69, col 12] Unmatched delimiter ).[0m
+  [36m70[0m  [36m[0m
+  [36m71[0m  [36m;; -------------------------[0m
+  [36m72[0m  [36m;; Initialize app[0m
+
+[36m----  Reader Error : Please see src/cljs/gmail/core.cljs  ----[0m
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+[31mFailed to compile build :app from ["src/cljs" "src/cljc" "env/dev/cljs"] in 0.306 seconds.[0m
+[36m----  Could not Read  src/cljs/gmail/core.cljs   line:69 ----[0m
+
+  [1m/home/koompi/project/gmail/src/cljs/gmail/core.cljs [line 69, col 12] Unmatched delimiter ).[0m
+
+  [36m67[0m  [36m       [page][0m
+  [36m68[0m  [36m       [:footer[0m
+  [33m69[0m  [1m         ])[0m
+  [0m  [0m  [33m         /home/koompi/project/gmail/src/cljs/gmail/core.cljs [line 69, col 12] Unmatched delimiter ).[0m
+  [36m70[0m  [36m[0m
+  [36m71[0m  [36m;; -------------------------[0m
+  [36m72[0m  [36m;; Initialize app[0m
+
+[36m----  Reader Error : Please see src/cljs/gmail/core.cljs  ----[0m
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+[31mFailed to compile build :app from ["src/cljs" "src/cljc" "env/dev/cljs"] in 0.278 seconds.[0m
+[36m----  Could not Read  src/cljs/gmail/core.cljs   line:69 ----[0m
+
+  [1m/home/koompi/project/gmail/src/cljs/gmail/core.cljs [line 69, col 12] Unmatched delimiter ).[0m
+
+  [36m67[0m  [36m       [page][0m
+  [36m68[0m  [36m       [:footer[0m
+  [33m69[0m  [1m         ])))[0m
+  [0m  [0m  [33m         /home/koompi/project/gmail/src/cljs/gmail/core.cljs [line 69, col 12] Unmatched delimiter ).[0m
+  [36m70[0m  [36m[0m
+  [36m71[0m  [36m;; -------------------------[0m
+  [36m72[0m  [36m;; Initialize app[0m
+
+[36m----  Reader Error : Please see src/cljs/gmail/core.cljs  ----[0m
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+[31mFailed to compile build :app from ["src/cljs" "src/cljc" "env/dev/cljs"] in 0.276 seconds.[0m
+[36m----  Could not Read  src/cljs/gmail/core.cljs   line:69 ----[0m
+
+  [1m/home/koompi/project/gmail/src/cljs/gmail/core.cljs [line 69, col 12] Unmatched delimiter ).[0m
+
+  [36m67[0m  [36m       [page][0m
+  [36m68[0m  [36m       [:footer[0m
+  [33m69[0m  [1m         ]))[0m
+  [0m  [0m  [33m         /home/koompi/project/gmail/src/cljs/gmail/core.cljs [line 69, col 12] Unmatched delimiter ).[0m
+  [36m70[0m  [36m[0m
+  [36m71[0m  [36m;; -------------------------[0m
+  [36m72[0m  [36m;; Initialize app[0m
+
+[36m----  Reader Error : Please see src/cljs/gmail/core.cljs  ----[0m
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+[31mFailed to compile build :app from ["src/cljs" "src/cljc" "env/dev/cljs"] in 0.276 seconds.[0m
+[36m----  Could not Read  src/cljs/gmail/core.cljs   line:69 ----[0m
+
+  [1m/home/koompi/project/gmail/src/cljs/gmail/core.cljs [line 69, col 102] Unmatched delimiter ].[0m
+
+  [36m67[0m  [36m       [page][0m
+  [36m68[0m  [36m       [:footer[0m
+  [33m69[0m  [1m         [:a {:href "https://github.com/reagent-project/reagent-template"} "Reagent Template"] "."]]])))[0m
+  [0m  [0m  [33m         /home/koompi/project/gmail/src/cljs/gmail/core.cljs [line 69, col 102] Unmatched delimiter ].[0m
+  [36m70[0m  [36m[0m
+  [36m71[0m  [36m;; -------------------------[0m
+  [36m72[0m  [36m;; Initialize app[0m
+
+[36m----  Reader Error : Please see src/cljs/gmail/core.cljs  ----[0m
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+[32mSuccessfully compiled build :app to "target/cljsbuild/public/js/app.js" in 0.427 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/gmail/core.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+[32mSuccessfully compiled build :app to "target/cljsbuild/public/js/app.js" in 1.623 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/goog/deps.js
+notifying browser that file changed:  target/cljsbuild/public/js/out/cljs_deps.js
+notifying browser that file changed:  target/cljsbuild/public/js/out/gmail/core.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+[32mSuccessfully compiled build :app to "target/cljsbuild/public/js/app.js" in 0.647 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/gmail/core.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+[32mSuccessfully compiled build :app to "target/cljsbuild/public/js/app.js" in 0.596 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/gmail/core.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+[32mSuccessfully compiled build :app to "target/cljsbuild/public/js/app.js" in 0.584 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/gmail/core.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+[32mSuccessfully compiled build :app to "target/cljsbuild/public/js/app.js" in 0.656 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/gmail/mail.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+[31mFailed to compile build :app from ["src/cljs" "src/cljc" "env/dev/cljs"] in 0.331 seconds.[0m
+[36m----  Could not Read  src/cljs/gmail/core.cljs   line:16 ----[0m
+
+  [1m/home/koompi/project/gmail/src/cljs/gmail/core.cljs [line 16, col 6] Unmatched delimiter ).[0m
+
+  [36m14[0m  [36m   [["/" :index][0m
+  [36m15[0m  [36m    ["/mail" :mail][0m
+  [33m16[0m  [1m    ))[0m
+  [0m  [0m  [33m    /home/koompi/project/gmail/src/cljs/gmail/core.cljs [line 16, col 6] Unmatched delimiter ).[0m
+  [36m17[0m  [36m[0m
+  [36m18[0m  [36m(defn path-for [route & [params]][0m
+  [36m19[0m  [36m  (if params[0m
+
+[36m----  Reader Error : Please see src/cljs/gmail/core.cljs  ----[0m
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+[31mFailed to compile build :app from ["src/cljs" "src/cljc" "env/dev/cljs"] in 0.317 seconds.[0m
+[36m----  Could not Read  src/cljs/gmail/core.cljs   line:86 ----[0m
+
+  [1m/home/koompi/project/gmail/src/cljs/gmail/core.cljs [line 86, col 1] Unexpected EOF while reading item 11 of list, starting at line 12 and column 1.[0m
+
+[36m----  Reader Error : Please see src/cljs/gmail/core.cljs  ----[0m
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+[31mFailed to compile build :app from ["src/cljs" "src/cljc" "env/dev/cljs"] in 0.276 seconds.[0m
+[36m----  Could not Read  src/cljs/gmail/core.cljs   line:16 ----[0m
+
+  [1m/home/koompi/project/gmail/src/cljs/gmail/core.cljs [line 16, col 6] Unmatched delimiter ].[0m
+
+  [36m14[0m  [36m   [["/" :index][0m
+  [36m15[0m  [36m    ["/mail" :mail][0m
+  [33m16[0m  [1m   ]])[0m
+  [0m  [0m  [33m   /home/koompi/project/gmail/src/cljs/gmail/core.cljs [line 16, col 6] Unmatched delimiter ].[0m
+  [36m17[0m  [36m[0m
+  [36m18[0m  [36m(defn path-for [route & [params]][0m
+  [36m19[0m  [36m  (if params[0m
+
+[36m----  Reader Error : Please see src/cljs/gmail/core.cljs  ----[0m
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+[32mSuccessfully compiled build :app to "target/cljsbuild/public/js/app.js" in 0.52 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/gmail/core.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+[32mSuccessfully compiled build :app to "target/cljsbuild/public/js/app.js" in 0.473 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/gmail/core.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+[32mSuccessfully compiled build :app to "target/cljsbuild/public/js/app.js" in 0.451 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/gmail/core.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+[32mSuccessfully compiled build :app to "target/cljsbuild/public/js/app.js" in 0.485 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/gmail/mail.js
+Notifying browser that CSS file changed: resources/public/css/site.css
+Notifying browser that CSS file changed: resources/public/css/site.css
+Notifying browser that CSS file changed: resources/public/css/site.css
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+[32mSuccessfully compiled build :app to "target/cljsbuild/public/js/app.js" in 2.933 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/gmail/mail.js
+Notifying browser that CSS file changed: resources/public/css/site.css
+Notifying browser that CSS file changed: resources/public/css/site.css
+Notifying browser that CSS file changed: resources/public/css/site.css
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+[32mSuccessfully compiled build :app to "target/cljsbuild/public/js/app.js" in 1.989 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/goog/deps.js
+notifying browser that file changed:  target/cljsbuild/public/js/out/cljs_deps.js
+notifying browser that file changed:  target/cljsbuild/public/js/out/gmail/mail.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+[32mSuccessfully compiled build :app to "target/cljsbuild/public/js/app.js" in 3.628 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/gmail/mail.js
+Notifying browser that CSS file changed: resources/public/css/site.css
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+[32mSuccessfully compiled build :app to "target/cljsbuild/public/js/app.js" in 0.987 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/gmail/mail.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+[32mSuccessfully compiled build :app to "target/cljsbuild/public/js/app.js" in 0.556 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/gmail/mail.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+[32mSuccessfully compiled build :app to "target/cljsbuild/public/js/app.js" in 0.527 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/gmail/mail.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+[32mSuccessfully compiled build :app to "target/cljsbuild/public/js/app.js" in 0.591 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/gmail/mail.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+[32mSuccessfully compiled build :app to "target/cljsbuild/public/js/app.js" in 0.461 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/gmail/mail.js
+Notifying browser that CSS file changed: resources/public/css/site.css
+Notifying browser that CSS file changed: resources/public/css/site.css
+Notifying browser that CSS file changed: resources/public/css/site.css
+Notifying browser that CSS file changed: resources/public/css/site.css
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+[32mSuccessfully compiled build :app to "target/cljsbuild/public/js/app.js" in 0.576 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/gmail/mail.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+[32mSuccessfully compiled build :app to "target/cljsbuild/public/js/app.js" in 0.456 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/gmail/mail.js
+Notifying browser that CSS file changed: resources/public/css/site.css
+Notifying browser that CSS file changed: resources/public/css/site.css
+Notifying browser that CSS file changed: resources/public/css/site.css
+Notifying browser that CSS file changed: resources/public/css/site.css
+Notifying browser that CSS file changed: resources/public/css/site.css
+Notifying browser that CSS file changed: resources/public/css/site.css
+Notifying browser that CSS file changed: resources/public/css/site.css
+Notifying browser that CSS file changed: resources/public/css/site.css
+Notifying browser that CSS file changed: resources/public/css/site.css
+Notifying browser that CSS file changed: resources/public/css/site.css
+Notifying browser that CSS file changed: resources/public/css/site.css
+Notifying browser that CSS file changed: resources/public/css/site.css
+Notifying browser that CSS file changed: resources/public/css/site.css
+Notifying browser that CSS file changed: resources/public/css/site.css
+Notifying browser that CSS file changed: resources/public/css/site.css
+Notifying browser that CSS file changed: resources/public/css/site.css
+Notifying browser that CSS file changed: resources/public/css/site.css
+Notifying browser that CSS file changed: resources/public/css/site.css
+Notifying browser that CSS file changed: resources/public/css/site.css
+Notifying browser that CSS file changed: resources/public/css/site.css
+Notifying browser that CSS file changed: resources/public/css/site.css
+Notifying browser that CSS file changed: resources/public/css/site.css
+Notifying browser that CSS file changed: resources/public/css/site.css
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+[32mSuccessfully compiled build :app to "target/cljsbuild/public/js/app.js" in 0.632 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/gmail/mail.js
+Notifying browser that CSS file changed: resources/public/css/site.css
+Notifying browser that CSS file changed: resources/public/css/site.css
+Notifying browser that CSS file changed: resources/public/css/site.css
+Notifying browser that CSS file changed: resources/public/css/site.css
+Notifying browser that CSS file changed: resources/public/css/site.css
+Notifying browser that CSS file changed: resources/public/css/site.css
+Notifying browser that CSS file changed: resources/public/css/site.css
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+[32mSuccessfully compiled build :app to "target/cljsbuild/public/js/app.js" in 0.558 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/gmail/mail.js
+Notifying browser that CSS file changed: resources/public/css/site.css
+Notifying browser that CSS file changed: resources/public/css/site.css
+Notifying browser that CSS file changed: resources/public/css/site.css
+Notifying browser that CSS file changed: resources/public/css/site.css
+Notifying browser that CSS file changed: resources/public/css/site.css
+Notifying browser that CSS file changed: resources/public/css/site.css
+Notifying browser that CSS file changed: resources/public/css/site.css
+Notifying browser that CSS file changed: resources/public/css/site.css
+Notifying browser that CSS file changed: resources/public/css/site.css
+Notifying browser that CSS file changed: resources/public/css/site.css
+Notifying browser that CSS file changed: resources/public/css/site.css
+Notifying browser that CSS file changed: resources/public/css/site.css
+Notifying browser that CSS file changed: resources/public/css/site.css
+Notifying browser that CSS file changed: resources/public/css/site.css
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+[32mSuccessfully compiled build :app to "target/cljsbuild/public/js/app.js" in 0.574 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/gmail/mail.js
+Notifying browser that CSS file changed: resources/public/css/site.css
+Notifying browser that CSS file changed: resources/public/css/site.css
+Notifying browser that CSS file changed: resources/public/css/site.css
+Notifying browser that CSS file changed: resources/public/css/site.css
+Notifying browser that CSS file changed: resources/public/css/site.css
+Notifying browser that CSS file changed: resources/public/css/site.css
+Notifying browser that CSS file changed: resources/public/css/site.css
+Notifying browser that CSS file changed: resources/public/css/site.css
+Notifying browser that CSS file changed: resources/public/css/site.css
+Notifying browser that CSS file changed: resources/public/css/site.css
+Notifying browser that CSS file changed: resources/public/css/site.css
+Notifying browser that CSS file changed: resources/public/css/site.css
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+[32mSuccessfully compiled build :app to "target/cljsbuild/public/js/app.js" in 0.56 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/gmail/mail.js
+Notifying browser that CSS file changed: resources/public/css/site.css
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+[32mSuccessfully compiled build :app to "target/cljsbuild/public/js/app.js" in 0.456 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/gmail/mail.js
+Notifying browser that CSS file changed: resources/public/css/site.css
+Notifying browser that CSS file changed: resources/public/css/site.css
+Notifying browser that CSS file changed: resources/public/css/site.css
+Notifying browser that CSS file changed: resources/public/css/site.css
+Notifying browser that CSS file changed: resources/public/css/site.css
+Notifying browser that CSS file changed: resources/public/css/site.css
+Notifying browser that CSS file changed: resources/public/css/site.css
+Notifying browser that CSS file changed: resources/public/css/site.css
+Notifying browser that CSS file changed: resources/public/css/site.css
+Notifying browser that CSS file changed: resources/public/css/site.css
+Notifying browser that CSS file changed: resources/public/css/site.css
+Notifying browser that CSS file changed: resources/public/css/site.css
+Notifying browser that CSS file changed: resources/public/css/site.css
+Notifying browser that CSS file changed: resources/public/css/site.css
+Notifying browser that CSS file changed: resources/public/css/site.css
+Notifying browser that CSS file changed: resources/public/css/site.css
+Notifying browser that CSS file changed: resources/public/css/site.css
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+[32mSuccessfully compiled build :app to "target/cljsbuild/public/js/app.js" in 0.807 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/gmail/mail.js
+Notifying browser that CSS file changed: resources/public/css/site.css
+Notifying browser that CSS file changed: resources/public/css/site.css
+Notifying browser that CSS file changed: resources/public/css/site.css
+Notifying browser that CSS file changed: resources/public/css/site.css
+Notifying browser that CSS file changed: resources/public/css/site.css
+Notifying browser that CSS file changed: resources/public/css/site.css
+Notifying browser that CSS file changed: resources/public/css/site.css
+Notifying browser that CSS file changed: resources/public/css/site.css
+Notifying browser that CSS file changed: resources/public/css/site.css
+Notifying browser that CSS file changed: resources/public/css/site.css
+Notifying browser that CSS file changed: resources/public/css/site.css
+Notifying browser that CSS file changed: resources/public/css/site.css
+Notifying browser that CSS file changed: resources/public/css/site.css
+Notifying browser that CSS file changed: resources/public/css/site.css
+Notifying browser that CSS file changed: resources/public/css/site.css
+Notifying browser that CSS file changed: resources/public/css/site.css
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+[32mSuccessfully compiled build :app to "target/cljsbuild/public/js/app.js" in 0.61 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/gmail/mail.js
+Notifying browser that CSS file changed: resources/public/css/site.css
+Notifying browser that CSS file changed: resources/public/css/site.css
+Notifying browser that CSS file changed: resources/public/css/site.css
+Notifying browser that CSS file changed: resources/public/css/site.css
+Notifying browser that CSS file changed: resources/public/css/site.css
+Notifying browser that CSS file changed: resources/public/css/site.css
+Notifying browser that CSS file changed: resources/public/css/site.css
+Notifying browser that CSS file changed: resources/public/css/site.css
+Notifying browser that CSS file changed: resources/public/css/site.css
+Notifying browser that CSS file changed: resources/public/css/site.css
+Notifying browser that CSS file changed: resources/public/css/site.css
+Notifying browser that CSS file changed: resources/public/css/site.css
+Notifying browser that CSS file changed: resources/public/css/site.css
+Notifying browser that CSS file changed: resources/public/css/site.css
+Notifying browser that CSS file changed: resources/public/css/site.css
+Notifying browser that CSS file changed: resources/public/css/site.css
+Notifying browser that CSS file changed: resources/public/css/site.css
+Notifying browser that CSS file changed: resources/public/css/site.css
+Notifying browser that CSS file changed: resources/public/css/site.css
+Notifying browser that CSS file changed: resources/public/css/site.css
+Notifying browser that CSS file changed: resources/public/css/site.css
+Notifying browser that CSS file changed: resources/public/css/site.css
+Notifying browser that CSS file changed: resources/public/css/site.css
+Notifying browser that CSS file changed: resources/public/css/site.css
+Notifying browser that CSS file changed: resources/public/css/site.css
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+[32mSuccessfully compiled build :app to "target/cljsbuild/public/js/app.js" in 0.462 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/gmail/mail.js
+Notifying browser that CSS file changed: resources/public/css/site.css
+Notifying browser that CSS file changed: resources/public/css/site.css
+Notifying browser that CSS file changed: resources/public/css/site.css
+Notifying browser that CSS file changed: resources/public/css/site.css
+Notifying browser that CSS file changed: resources/public/css/site.css
+Notifying browser that CSS file changed: resources/public/css/site.css
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+[32mSuccessfully compiled build :app to "target/cljsbuild/public/js/app.js" in 0.704 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/gmail/mail.js
+Notifying browser that CSS file changed: resources/public/css/site.css
+Notifying browser that CSS file changed: resources/public/css/site.css
+Notifying browser that CSS file changed: resources/public/css/site.css
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+[32mSuccessfully compiled build :app to "target/cljsbuild/public/js/app.js" in 0.551 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/gmail/mail.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+[32mSuccessfully compiled build :app to "target/cljsbuild/public/js/app.js" in 0.382 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/gmail/mail.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+[32mSuccessfully compiled build :app to "target/cljsbuild/public/js/app.js" in 0.41 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/gmail/mail.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+[32mSuccessfully compiled build :app to "target/cljsbuild/public/js/app.js" in 0.401 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/gmail/mail.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+[32mSuccessfully compiled build :app to "target/cljsbuild/public/js/app.js" in 0.612 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/gmail/mail.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+[32mSuccessfully compiled build :app to "target/cljsbuild/public/js/app.js" in 0.396 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/gmail/mail.js
+Notifying browser that CSS file changed: resources/public/css/site.css
+Notifying browser that CSS file changed: resources/public/css/site.css
+Notifying browser that CSS file changed: resources/public/css/site.css
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+[32mSuccessfully compiled build :app to "target/cljsbuild/public/js/app.js" in 0.437 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/gmail/mail.js
+Notifying browser that CSS file changed: resources/public/css/site.css
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+[32mSuccessfully compiled build :app to "target/cljsbuild/public/js/app.js" in 0.548 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/gmail/mail.js
+Notifying browser that CSS file changed: resources/public/css/site.css
+Notifying browser that CSS file changed: resources/public/css/site.css
+Notifying browser that CSS file changed: resources/public/css/site.css
+Notifying browser that CSS file changed: resources/public/css/site.css
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+[32mSuccessfully compiled build :app to "target/cljsbuild/public/js/app.js" in 0.686 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/gmail/mail.js
+Notifying browser that CSS file changed: resources/public/css/site.css
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+[32mSuccessfully compiled build :app to "target/cljsbuild/public/js/app.js" in 0.418 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/gmail/mail.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+[32mSuccessfully compiled build :app to "target/cljsbuild/public/js/app.js" in 0.569 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/gmail/mail.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+[32mSuccessfully compiled build :app to "target/cljsbuild/public/js/app.js" in 0.552 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/gmail/mail.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+[32mSuccessfully compiled build :app to "target/cljsbuild/public/js/app.js" in 0.434 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/gmail/mail.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+[32mSuccessfully compiled build :app to "target/cljsbuild/public/js/app.js" in 0.389 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/gmail/mail.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+[32mSuccessfully compiled build :app to "target/cljsbuild/public/js/app.js" in 14.566 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/goog/deps.js
+notifying browser that file changed:  target/cljsbuild/public/js/out/cljs_deps.js
+notifying browser that file changed:  target/cljsbuild/public/js/out/gmail/mail.js
+Notifying browser that CSS file changed: resources/public/css/site.css
+Notifying browser that CSS file changed: resources/public/css/site.css
+Notifying browser that CSS file changed: resources/public/css/site.css
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+[31mFailed to compile build :app from ["src/cljs" "src/cljc" "env/dev/cljs"] in 0.578 seconds.[0m
+[36m----  Could not Read  src/cljs/gmail/mail.cljs   line:29 ----[0m
+
+  [1m/home/koompi/project/gmail/src/cljs/gmail/mail.cljs [line 29, col 1] Unexpected EOF reading string starting "]]]])
+        
+        
+        
+
+
+
+
+
+        
+.[0m
+
+[36m----  Reader Error : Please see src/cljs/gmail/mail.cljs  ----[0m
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+[31mFailed to compile build :app from ["src/cljs" "src/cljc" "env/dev/cljs"] in 0.396 seconds.[0m
+[36m----  Could not Read  src/cljs/gmail/mail.cljs   line:29 ----[0m
+
+  [1m/home/koompi/project/gmail/src/cljs/gmail/mail.cljs [line 29, col 1] Unexpected EOF reading string starting "]]]]])
+        
+        
+        
+
+
+
+
+
+        
+.[0m
+
+[36m----  Reader Error : Please see src/cljs/gmail/mail.cljs  ----[0m
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+[31mFailed to compile build :app from ["src/cljs" "src/cljc" "env/dev/cljs"] in 0.461 seconds.[0m
+[36m----  Could not Read  src/cljs/gmail/mail.cljs   line:29 ----[0m
+
+  [1m/home/koompi/project/gmail/src/cljs/gmail/mail.cljs [line 29, col 1] Unexpected EOF reading string starting "]]]]])
+        
+        
+        
+
+
+
+
+
+        
+.[0m
+
+[36m----  Reader Error : Please see src/cljs/gmail/mail.cljs  ----[0m
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+[32mSuccessfully compiled build :app to "target/cljsbuild/public/js/app.js" in 4.711 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/gmail/mail.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+[32mSuccessfully compiled build :app to "target/cljsbuild/public/js/app.js" in 0.86 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/gmail/mail.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+[32mSuccessfully compiled build :app to "target/cljsbuild/public/js/app.js" in 0.761 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/gmail/mail.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+[32mSuccessfully compiled build :app to "target/cljsbuild/public/js/app.js" in 1.023 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/gmail/mail.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+[32mSuccessfully compiled build :app to "target/cljsbuild/public/js/app.js" in 0.562 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/gmail/mail.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+[32mSuccessfully compiled build :app to "target/cljsbuild/public/js/app.js" in 0.616 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/gmail/mail.js
+Notifying browser that CSS file changed: resources/public/css/site.css
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+[32mSuccessfully compiled build :app to "target/cljsbuild/public/js/app.js" in 0.583 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/gmail/mail.js
+Notifying browser that CSS file changed: resources/public/css/site.css
+Notifying browser that CSS file changed: resources/public/css/site.css
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+[32mSuccessfully compiled build :app to "target/cljsbuild/public/js/app.js" in 0.796 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/gmail/mail.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+[32mSuccessfully compiled build :app to "target/cljsbuild/public/js/app.js" in 0.572 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/gmail/mail.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+[32mSuccessfully compiled build :app to "target/cljsbuild/public/js/app.js" in 0.658 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/gmail/mail.js
+Notifying browser that CSS file changed: resources/public/css/site.css
+Notifying browser that CSS file changed: resources/public/css/site.css
+Notifying browser that CSS file changed: resources/public/css/site.css
+Notifying browser that CSS file changed: resources/public/css/site.css
+Notifying browser that CSS file changed: resources/public/css/site.css
+Notifying browser that CSS file changed: resources/public/css/site.css
+Notifying browser that CSS file changed: resources/public/css/site.css
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+[32mSuccessfully compiled build :app to "target/cljsbuild/public/js/app.js" in 10.705 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/gmail/mail.js
+Notifying browser that CSS file changed: resources/public/css/site.css
+Notifying browser that CSS file changed: resources/public/css/site.css
+Notifying browser that CSS file changed: resources/public/css/site.css
+Notifying browser that CSS file changed: resources/public/css/site.css
+Notifying browser that CSS file changed: resources/public/css/site.css
+Notifying browser that CSS file changed: resources/public/css/site.css
+Notifying browser that CSS file changed: resources/public/css/site.css
+Notifying browser that CSS file changed: resources/public/css/site.css
+Notifying browser that CSS file changed: resources/public/css/site.css
+Notifying browser that CSS file changed: resources/public/css/site.css
+Notifying browser that CSS file changed: resources/public/css/site.css
+Notifying browser that CSS file changed: resources/public/css/site.css
+Notifying browser that CSS file changed: resources/public/css/site.css
+Notifying browser that CSS file changed: resources/public/css/site.css
+Notifying browser that CSS file changed: resources/public/css/site.css
+Notifying browser that CSS file changed: resources/public/css/site.css
+Notifying browser that CSS file changed: resources/public/css/site.css
+Notifying browser that CSS file changed: resources/public/css/site.css
+Notifying browser that CSS file changed: resources/public/css/site.css
+Notifying browser that CSS file changed: resources/public/css/site.css
+Notifying browser that CSS file changed: resources/public/css/site.css
+Notifying browser that CSS file changed: resources/public/css/site.css
+Notifying browser that CSS file changed: resources/public/css/site.css
+Notifying browser that CSS file changed: resources/public/css/site.css
+Notifying browser that CSS file changed: resources/public/css/site.css
+Notifying browser that CSS file changed: resources/public/css/site.css
+Notifying browser that CSS file changed: resources/public/css/site.css
+Notifying browser that CSS file changed: resources/public/css/site.css
+Notifying browser that CSS file changed: resources/public/css/site.css
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+[32mSuccessfully compiled build :app to "target/cljsbuild/public/js/app.js" in 0.878 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/gmail/mail.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+[32mSuccessfully compiled build :app to "target/cljsbuild/public/js/app.js" in 0.558 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/gmail/mail.js
+Notifying browser that CSS file changed: resources/public/css/site.css
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+[32mSuccessfully compiled build :app to "target/cljsbuild/public/js/app.js" in 0.502 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/gmail/mail.js
+Notifying browser that CSS file changed: resources/public/css/site.css
+Notifying browser that CSS file changed: resources/public/css/site.css
+Notifying browser that CSS file changed: resources/public/css/site.css
+Notifying browser that CSS file changed: resources/public/css/site.css
+Notifying browser that CSS file changed: resources/public/css/site.css
+Notifying browser that CSS file changed: resources/public/css/site.css
+Notifying browser that CSS file changed: resources/public/css/site.css
+Notifying browser that CSS file changed: resources/public/css/site.css
+Notifying browser that CSS file changed: resources/public/css/site.css
+Notifying browser that CSS file changed: resources/public/css/site.css
+Notifying browser that CSS file changed: resources/public/css/site.css
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+[32mSuccessfully compiled build :app to "target/cljsbuild/public/js/app.js" in 0.635 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/gmail/mail.js
+Notifying browser that CSS file changed: resources/public/css/site.css
+Notifying browser that CSS file changed: resources/public/css/site.css
+Notifying browser that CSS file changed: resources/public/css/site.css
+Notifying browser that CSS file changed: resources/public/css/site.css
+Notifying browser that CSS file changed: resources/public/css/site.css
+Notifying browser that CSS file changed: resources/public/css/site.css
+Notifying browser that CSS file changed: resources/public/css/site.css
+Notifying browser that CSS file changed: resources/public/css/site.css
+Notifying browser that CSS file changed: resources/public/css/site.css
+Notifying browser that CSS file changed: resources/public/css/site.css
+Notifying browser that CSS file changed: resources/public/css/site.css
+Notifying browser that CSS file changed: resources/public/css/site.css
+Notifying browser that CSS file changed: resources/public/css/site.css
+Notifying browser that CSS file changed: resources/public/css/site.css
+Notifying browser that CSS file changed: resources/public/css/site.css
+Notifying browser that CSS file changed: resources/public/css/site.css
+Notifying browser that CSS file changed: resources/public/css/site.css
+Notifying browser that CSS file changed: resources/public/css/site.css
+Notifying browser that CSS file changed: resources/public/css/site.css
+Notifying browser that CSS file changed: resources/public/css/site.css
+Notifying browser that CSS file changed: resources/public/css/site.css
+Notifying browser that CSS file changed: resources/public/css/site.css
+Notifying browser that CSS file changed: resources/public/css/site.css
+Notifying browser that CSS file changed: resources/public/css/site.css
+Notifying browser that CSS file changed: resources/public/css/site.css
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+[31mFailed to compile build :app from ["src/cljs" "src/cljc" "env/dev/cljs"] in 0.348 seconds.[0m
+[36m----  Could not Read  src/cljs/gmail/mail.cljs   line:18 ----[0m
+
+  [1m/home/koompi/project/gmail/src/cljs/gmail/mail.cljs [line 18, col 103] Unmatched delimiter ].[0m
+
+  [36m16[0m  [36m[:button {:class "button button1"} [0m
+  [36m17[0m  [36m  [:i {:class "material-icons composeIcon "} "add"][0m
+  [33m18[0m  [1m    [:span {:style {:fontFamily "Roboto" :fontSize "20px" :textAgiln "left"}"Compose"][0m
+  [0m  [0m  [33m    /home/koompi/project/gmail/src/cljs/gmail/mail.cljs [line 18, col 103] Unmatched delimiter ].[0m
+  [36m19[0m  [36m[:ul[0m
+  [36m20[0m  [36m    [:li [:i {:class "material-icons navIcon"} "account_balance"][0m
+  [36m21[0m  [36m        [:span {:style {:fontSize "16px" :fontFamily "Roboto" :color "#fff"}}"Inbox"]][0m
+
+[36m----  Reader Error : Please see src/cljs/gmail/mail.cljs  ----[0m
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+[31mFailed to compile build :app from ["src/cljs" "src/cljc" "env/dev/cljs"] in 0.334 seconds.[0m
+[36m----  Could not Read  src/cljs/gmail/mail.cljs   line:18 ----[0m
+
+  [1m/home/koompi/project/gmail/src/cljs/gmail/mail.cljs [line 18, col 103] Unmatched delimiter ].[0m
+
+  [36m16[0m  [36m[:button {:class "button button1"} [0m
+  [36m17[0m  [36m  [:i {:class "material-icons composeIcon "} "add"][0m
+  [33m18[0m  [1m    [:span {:style {:fontFamily "Roboto" :fontSize "20px" :textAgiln "left"}"Compose"]]][0m
+  [0m  [0m  [33m    /home/koompi/project/gmail/src/cljs/gmail/mail.cljs [line 18, col 103] Unmatched delimiter ].[0m
+  [36m19[0m  [36m[:ul[0m
+  [36m20[0m  [36m    [:li [:i {:class "material-icons navIcon"} "account_balance"][0m
+  [36m21[0m  [36m        [:span {:style {:fontSize "16px" :fontFamily "Roboto" :color "#fff"}}"Inbox"]][0m
+
+[36m----  Reader Error : Please see src/cljs/gmail/mail.cljs  ----[0m
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+[32mSuccessfully compiled build :app to "target/cljsbuild/public/js/app.js" in 0.507 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/gmail/mail.js
+Notifying browser that CSS file changed: resources/public/css/site.css
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+[32mSuccessfully compiled build :app to "target/cljsbuild/public/js/app.js" in 0.524 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/gmail/mail.js
+Notifying browser that CSS file changed: resources/public/css/site.css
+Notifying browser that CSS file changed: resources/public/css/site.css
+Notifying browser that CSS file changed: resources/public/css/site.css
+Notifying browser that CSS file changed: resources/public/css/site.css
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+[32mSuccessfully compiled build :app to "target/cljsbuild/public/js/app.js" in 0.61 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/gmail/mail.js
+Notifying browser that CSS file changed: resources/public/css/site.css
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+[32mSuccessfully compiled build :app to "target/cljsbuild/public/js/app.js" in 0.496 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/gmail/mail.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+[32mSuccessfully compiled build :app to "target/cljsbuild/public/js/app.js" in 0.475 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/gmail/mail.js
+Notifying browser that CSS file changed: resources/public/css/site.css
+Notifying browser that CSS file changed: resources/public/css/site.css
+Notifying browser that CSS file changed: resources/public/css/site.css
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+[32mSuccessfully compiled build :app to "target/cljsbuild/public/js/app.js" in 0.495 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/gmail/mail.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+[32mSuccessfully compiled build :app to "target/cljsbuild/public/js/app.js" in 0.6 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/gmail/mail.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+[32mSuccessfully compiled build :app to "target/cljsbuild/public/js/app.js" in 0.528 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/gmail/mail.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+[32mSuccessfully compiled build :app to "target/cljsbuild/public/js/app.js" in 0.472 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/gmail/mail.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+[32mSuccessfully compiled build :app to "target/cljsbuild/public/js/app.js" in 0.494 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/gmail/mail.js
+Notifying browser that CSS file changed: resources/public/css/site.css
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+[32mSuccessfully compiled build :app to "target/cljsbuild/public/js/app.js" in 0.544 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/gmail/mail.js
+Notifying browser that CSS file changed: resources/public/css/site.css
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+[32mSuccessfully compiled build :app to "target/cljsbuild/public/js/app.js" in 0.512 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/gmail/mail.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+[32mSuccessfully compiled build :app to "target/cljsbuild/public/js/app.js" in 0.477 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/gmail/mail.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+[32mSuccessfully compiled build :app to "target/cljsbuild/public/js/app.js" in 0.551 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/gmail/mail.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+[32mSuccessfully compiled build :app to "target/cljsbuild/public/js/app.js" in 0.438 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/gmail/mail.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+[32mSuccessfully compiled build :app to "target/cljsbuild/public/js/app.js" in 0.518 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/gmail/mail.js
+Notifying browser that CSS file changed: resources/public/css/site.css
+Notifying browser that CSS file changed: resources/public/css/site.css
+Notifying browser that CSS file changed: resources/public/css/site.css
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+[32mSuccessfully compiled build :app to "target/cljsbuild/public/js/app.js" in 0.636 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/gmail/mail.js
+Notifying browser that CSS file changed: resources/public/css/site.css
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+[32mSuccessfully compiled build :app to "target/cljsbuild/public/js/app.js" in 0.505 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/gmail/mail.js
+Notifying browser that CSS file changed: resources/public/css/site.css
+Notifying browser that CSS file changed: resources/public/css/site.css
+Notifying browser that CSS file changed: resources/public/css/site.css

@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+
+html {
+  width: 100%;
+  height: 100%;
+}
+body {
+  font-family: Roboto;
+  font-size: 14px;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+* {
+  box-sizing: border-box;
+}
+#app, .appContainer, .container {
+  width: 100%;
+  min-height: 100%;
+}
+.contentContainer{
+  position: absolute;
+  top: 50px;
+  left: 0;
+  z-index: 0;
+}
+.material-icons {
+  vertical-align: middle !important;
+}
+.header {
+  width: 100%;
+  height: 50px;
+  background: #6bc4ca;
+  line-height: 50px;
+  position: fixed;
+  z-index: 10;
+}
+.headertext{
+  font-size: 16px;
+}
+.left-header{
+  width: 100%;
+  height: 50px;
+  color: black;
+  line-height: 50px;  
+  } 
+.left-header > i {
+  float: left;
+  line-height: 50px;
+}
+.menuIcon{
+  padding: 0 20px;
+  color: white;
+}
+.gmailLogo{
+  font-size: 35px;
+  padding: 0px  20px 0px 0px;
+  color: red;
+}
+.searchBar{
+  width: 50px;
+  padding: 0px 20px 0px 0px;
+}
+.searchicon{
+  width: 40px;
+  height:22px;
+  font-size: 25px;
+  line-height: 20px;
+}
+
+.nav{
+  width: 13%;
+  height: calc(100% - 40px);
+  background: rgb(156, 191, 202);
+  position: fixed;
+  top: 50px; 
+  
+}
+nav:hover{
+  overflow: auto;
+}
+.nav ul {
+  margin: 0px;
+  padding: 0px;
+}
+.nav li {
+
+  list-style: none;
+  line-height: 50px;
+
+}
+.button {
+  background-color: rgb(222, 236, 223); 
+  border: none;
+  display: inline-block;
+  margin: 15px 15px;
+  cursor: pointer;
+} 
+.button{
+  border-radius: 70px;
+}
+.navIcon{
+  padding: 3px 15px;
+  font-size: 20px;
+  color: white;
+}
+.composeIcon{
+color: rgb(231, 95, 16);
+font-size: 40px;
+}
+
+
+
